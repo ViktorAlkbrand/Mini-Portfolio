@@ -1,0 +1,25 @@
+:root {
+    --bg-dark: hsl(336 0% 1%);
+    --bg: hsl(300 0% 4%);
+    --bg-light: hsl(0 0% 9%);
+    --text: hsl(300 0% 95%);
+    --text-muted: hsl(300 0% 69%);
+    --highlight: hsl(330 0% 39%);
+    --border: hsl(0 0% 28%);
+    --border-muted: hsl(300 0% 18%);
+    --primary: hsl(220 78% 76%);
+    --secondary: hsl(40 53% 60%);
+}
+
+body.light {
+  --bg-dark: hsl(0 0% 90%);
+  --bg: hsl(300 0% 95%);
+  --bg-light: hsl(300 50% 100%);
+  --text: hsl(300 0% 4%);
+  --text-muted: hsl(0 0% 28%);
+  --highlight: hsl(300 50% 100%);
+  --border: hsl(NaN 0% 50%);
+  --border-muted: hsl(340 0% 62%);
+  --primary: hsl(221 49% 33%);
+  --secondary: hsl(44 100% 14%);
+}
