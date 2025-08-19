@@ -2,10 +2,10 @@
 
 h1, h2 {
     font-family: 'Poppins', sans-serif; /* Use a bold, clean font for headings */
-    letter-spacing: 1px; /* Add spacing between letters */
+    letter-spacing: 0.0625rem; /* Add spacing between letters */
     color: var(--text);
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 p {
@@ -13,10 +13,11 @@ p {
     line-height: 1.8;
     color: var(--text-muted); /* Softer color for text */
     text-align: left;
-    margin: 10px 20px;
+    margin: 0.625rem 1.25rem;
 }
 
-span {
+/* Limit white spans to the hero heading only */
+.hero span {
     color: #fff !important;
 }
 

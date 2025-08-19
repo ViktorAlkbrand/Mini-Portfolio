@@ -8,25 +8,33 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav>
-        <ul class="topnav">
-            <li><a href="#about">Om Mig</a></li>
-            <li><a href="#projects">Projekt</a></li>
-            <li><a href="#contact">Kontakta Mig</a></li>
-            <li><a id="darkModeToggle">Dark Mode</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="brand">Viktor Alkbrand</a>
+            <button class="nav-toggle" aria-label="Öppna meny" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+                <li class="nav-item"><button id="darkModeToggle" class="nav-link nav-btn" type="button">Dark Mode</button></li>
+            </ul>
+        </div>
     </nav>   
 
     <!-- Header Section -->
     <header class="hero">
-        <h1><span>Välkommen till min Mini Portfolio</span></h1>
+        <h1><span>Mini Portfolio</span></h1>
     </header>
 
     <!-- Main Content -->
     <main>
         <!-- About Section -->
         <section id="about">
-            <h2 >Om Mig</h2>
+            <h2 >About Me</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Eaque autem rerum totam at, culpa, iusto porro voluptate fugit error aut dolorem pariatur!
@@ -44,18 +52,65 @@
 
         <!-- Projects Section -->
         <section id="projects">
-            <h2>Mina Projekt</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis non laboriosam porro minima aperiam vero similique!
-                Expedita animi sequi officia debitis deleniti!
-                Nisi qui, quibusdam eaque ad architecto itaque temporibus?
-            </p>
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card" tabindex="0" data-title="Project One" data-description="A concise description of Project One. Replace this with your own text later." data-image="assets/Images/HeaderBackground.png" data-tags="HTML,CSS,JavaScript">
+                    <div class="project-media">
+                        <img src="assets/Images/HeaderBackground.png" alt="Project One thumbnail">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Project One</h3>
+                        <p class="project-excerpt">A short summary goes here. Click to learn more.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn view-details" type="button">View details</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" tabindex="0" data-title="Project Two" data-description="A concise description of Project Two. Replace this with your own text later." data-image="assets/Images/HeaderBackground.png" data-tags="API,Node,UI">
+                    <div class="project-media">
+                        <img src="assets/Images/HeaderBackground.png" alt="Project Two thumbnail">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Project Two</h3>
+                        <p class="project-excerpt">Another summary lives here. Click to learn more.</p>
+                        <div class="project-tags">
+                            <span class="tag">API</span>
+                            <span class="tag">Node</span>
+                            <span class="tag">UI</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn view-details" type="button">View details</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" tabindex="0" data-title="Project Three" data-description="A concise description of Project Three. Replace this with your own text later." data-image="assets/Images/HeaderBackground.png" data-tags="Design,Frontend,Accessibility">
+                    <div class="project-media">
+                        <img src="assets/Images/HeaderBackground.png" alt="Project Three thumbnail">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Project Three</h3>
+                        <p class="project-excerpt">Add a short pitch here. Click to learn more.</p>
+                        <div class="project-tags">
+                            <span class="tag">Design</span>
+                            <span class="tag">Frontend</span>
+                            <span class="tag">Accessibility</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn view-details" type="button">View details</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Kontakta mig</h2>
+            <h2>Contact Me</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Doloribus, cumque. Quisquam, voluptatum. Doloremque, asperiores.
@@ -67,8 +122,22 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 My Mini Portfolio</p>
+        <p>My Mini Portfolio</p>
     </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-backdrop"></div>
+        <div class="modal-dialog" role="document">
+            <button class="modal-close" aria-label="Close">×</button>
+            <div class="modal-content">
+                <img class="modal-image" alt="" />
+                <h3 id="modalTitle" class="modal-title"></h3>
+                <p class="modal-desc"></p>
+                <div class="modal-tags"></div>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/js/script.js"></script>
 </body>

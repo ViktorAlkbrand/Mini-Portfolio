@@ -12,14 +12,14 @@
 }
 
 body.light {
-  --bg-dark: hsl(0 0% 90%);
-  --bg: hsl(300 0% 95%);
-  --bg-light: hsl(300 50% 100%);
-  --text: hsl(300 0% 4%);
-  --text-muted: hsl(0 0% 28%);
-  --highlight: hsl(300 50% 100%);
-  --border: hsl(NaN 0% 50%);
-  --border-muted: hsl(340 0% 62%);
-  --primary: hsl(221 49% 33%);
-  --secondary: hsl(44 100% 14%);
+  --bg-dark: hsl(0 0% 96%);
+  --bg: hsl(0 0% 100%);
+  --bg-light: hsl(0 0% 98%);
+  --text: hsl(230 15% 15%);
+  --text-muted: hsl(230 10% 40%);
+  --highlight: hsl(230 100% 97%);
+  --border: hsl(230 20% 85%);
+  --border-muted: hsl(230 20% 92%);
+  --primary: hsl(220 80% 56%);
+  --secondary: hsl(12 75% 54%);
 }
