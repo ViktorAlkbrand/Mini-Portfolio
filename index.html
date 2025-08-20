@@ -19,7 +19,6 @@
             <ul class="nav-menu">
                 <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
                 <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
                 <li class="nav-item"><button id="darkModeToggle" class="nav-link nav-btn" type="button">Dark Mode</button></li>
             </ul>
         </div>
@@ -27,34 +26,35 @@
 
     <!-- Header Section -->
     <header class="hero">
-        <h1><span>Mini Portfolio</span></h1>
+        <div class="container">
+            <h1><span>Mini Portfolio</span></h1>
+        </div>
     </header>
 
     <!-- Main Content -->
     <main>
+        <div class="container">
         <!-- About Section -->
         <section id="about">
             <h2 >About Me</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Eaque autem rerum totam at, culpa, iusto porro voluptate fugit error aut dolorem pariatur!
-                Deserunt sit velit beatae ab omnis voluptatem nostrum.
-
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Eaque autem rerum totam at, culpa, iusto porro voluptate fugit error aut dolorem pariatur!
-                Deserunt sit velit beatae ab omnis voluptatem nostrum.
-
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Eaque autem rerum totam at, culpa, iusto porro voluptate fugit error aut dolorem pariatur!
-                Deserunt sit velit beatae ab omnis voluptatem nostrum.
-            </p>
+            <div class="prose">
+                <p class="lead">
+                    I’m Viktor, an aspiring developer with a passion for creating clean, user-friendly, and accessible digital experiences. I enjoy bringing design and code together to create things that are useful and easy to use
+                </p>
+                <p>
+                    Outside of coding, I enjoy playing guitar and learning new things. I’m excited to keep learning and sharing my journey as a developer here.
+                </p>
+                <p>
+                    This portfolio is where I’ll showcase my projects as I continue to grow my skills as a developer.
+                </p>
+            </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
             <div class="projects-grid">
-                <article class="project-card" tabindex="0" data-title="Project One" data-description="A concise description of Project One. Replace this with your own text later." data-image="assets/Images/HeaderBackground.png" data-tags="HTML,CSS,JavaScript">
+                <article class="project-card" tabindex="0" data-title="Project One" data-description="A concise description of Project One. Replace this with your own text later." data-image="assets/Images/HeaderBackground.png" data-tags="Tag,Tag,Tag">
                     <div class="project-media">
                         <img src="assets/Images/HeaderBackground.png" alt="Project One thumbnail">
                     </div>
@@ -62,16 +62,16 @@
                         <h3 class="project-title">Project One</h3>
                         <p class="project-excerpt">A short summary goes here. Click to learn more.</p>
                         <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
+                            <span class="tag">Tag</span>
+                            <span class="tag">Tag</span>
+                            <span class="tag">Tag</span>
                         </div>
                         <div class="project-actions">
                             <button class="btn view-details" type="button">View details</button>
                         </div>
                     </div>
                 </article>
-                <article class="project-card" tabindex="0" data-title="Project Two" data-description="A concise description of Project Two. Replace this with your own text later." data-image="assets/Images/HeaderBackground.png" data-tags="API,Node,UI">
+                <article class="project-card" tabindex="0" data-title="Project Two" data-description="A concise description of Project Two. Replace this with your own text later." data-image="assets/Images/HeaderBackground.png" data-tags="Tag,Tag,Tag">
                     <div class="project-media">
                         <img src="assets/Images/HeaderBackground.png" alt="Project Two thumbnail">
                     </div>
@@ -79,16 +79,16 @@
                         <h3 class="project-title">Project Two</h3>
                         <p class="project-excerpt">Another summary lives here. Click to learn more.</p>
                         <div class="project-tags">
-                            <span class="tag">API</span>
-                            <span class="tag">Node</span>
-                            <span class="tag">UI</span>
+                            <span class="tag">Tag</span>
+                            <span class="tag">Tag</span>
+                            <span class="tag">Tag</span>
                         </div>
                         <div class="project-actions">
                             <button class="btn view-details" type="button">View details</button>
                         </div>
                     </div>
                 </article>
-                <article class="project-card" tabindex="0" data-title="Project Three" data-description="A concise description of Project Three. Replace this with your own text later." data-image="assets/Images/HeaderBackground.png" data-tags="Design,Frontend,Accessibility">
+                <article class="project-card" tabindex="0" data-title="Project Three" data-description="A concise description of Project Three. Replace this with your own text later." data-image="assets/Images/HeaderBackground.png" data-tags="Tag,Tag,Tag">
                     <div class="project-media">
                         <img src="assets/Images/HeaderBackground.png" alt="Project Three thumbnail">
                     </div>
@@ -96,9 +96,9 @@
                         <h3 class="project-title">Project Three</h3>
                         <p class="project-excerpt">Add a short pitch here. Click to learn more.</p>
                         <div class="project-tags">
-                            <span class="tag">Design</span>
-                            <span class="tag">Frontend</span>
-                            <span class="tag">Accessibility</span>
+                            <span class="tag">Tag</span>
+                            <span class="tag">Tag</span>
+                            <span class="tag">Tag</span>
                         </div>
                         <div class="project-actions">
                             <button class="btn view-details" type="button">View details</button>
@@ -108,16 +108,7 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus, cumque. Quisquam, voluptatum. Doloremque, asperiores.
-                Quasi, nobis! Voluptas, cumque. Doloribus, cumque. Quisquam, voluptatum.
-                Doloremque, asperiores. Quasi, nobis! Voluptas, cumque.
-            </p>
-        </section>
+        </div>
     </main>
 
     <!-- Footer -->

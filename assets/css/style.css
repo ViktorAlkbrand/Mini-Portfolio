@@ -22,10 +22,21 @@ body {
 }
 
 .container {
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
     overflow: hidden;
 }
+
+/* Responsive container widths */
+@media (min-width: 640px) { .container { max-width: 40rem; } }
+@media (min-width: 768px) { .container { max-width: 48rem; } }
+@media (min-width: 1024px) { .container { max-width: 60rem; } }
+@media (min-width: 1280px) { .container { max-width: 72rem; } }
+@media (min-width: 1536px) { .container { max-width: 80rem; } }
 
 main {
     padding: 1.25rem;
@@ -53,11 +64,11 @@ footer {
     background-size: cover;
     color: #fff !important;
     text-align: center;
-    padding: 6.25rem 1.25rem;
+    padding: 6.25rem 0;
     box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
 
     h1 {
-        font-size: 2.5rem;
+        font-size: clamp(2rem, 3.5vw + 1rem, 3rem);
         margin-bottom: 0.625rem;
     }
 
@@ -245,6 +256,10 @@ nav {
 	.projects-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
+@media (min-width: 1536px) {
+	.projects-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
 .project-card {
 	background: var(--bg);
 	border: 1px solid var(--border-muted);
@@ -294,3 +309,25 @@ nav {
 /* Ensure in-page anchor scroll positions account for sticky navbar */
 :root { --nav-height: 4rem; }
 section[id] { scroll-margin-top: calc(var(--nav-height) + 0.75rem); }
+
+/* Readable, modern typography for content sections */
+.prose {
+	max-width: 65ch;
+	margin-left: 3rem;
+	color: var(--text);
+}
+.prose p { 
+	margin: 0 0 1rem 0; 
+	line-height: 1.9; 
+	color: var(--text-muted);
+}
+.prose .lead { 
+	font-size: 1.125rem; 
+	line-height: 1.9; 
+	color: var(--text); 
+	letter-spacing: 0.005em;
+}
+.prose a { color: var(--primary); text-decoration: underline; }
+.prose strong { color: var(--text); }
+.prose ul, .prose ol { padding-left: 1.25rem; }
+.prose li { margin: 0.5rem 0; }

@@ -2,7 +2,7 @@
 
 h1, h2 {
     font-family: 'Poppins', sans-serif; /* Use a bold, clean font for headings */
-    letter-spacing: 0.0625rem; /* Add spacing between letters */
+    letter-spacing: 0.03em; /* Add spacing between letters; scale with font size */
     color: var(--text);
     text-align: center;
     margin-top: 1.25rem;
