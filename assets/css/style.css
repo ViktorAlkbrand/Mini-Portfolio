@@ -59,7 +59,7 @@ footer {
 }
 
 .hero {
-    background-image: url('/assets/Images/HeaderBackground.png');
+    background-image: url('../Images/HeaderBackground.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff !important;
