@@ -1,6 +1,6 @@
 /* Imports moved to <link> tags in index.html for reliability when opening file directly */
-@import url("_vars.css");
-@import url("_typoraphy.css");
+@import url("/assets/css/_vars.css");
+@import url("/assets/css/_typoraphy.css");
 
 * {
     box-sizing: border-box;
